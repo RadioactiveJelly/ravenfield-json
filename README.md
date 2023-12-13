@@ -22,3 +22,7 @@ local decodedData = rfjson:decode(testData) // Returns {playerLevel = 1, playerX
 ```
 
 Functionally this works the same way as the original version. The only difference is instead of json, you use rfjson. Remember **the prefab must be present** in your mutator or else it will not work.
+
+# Notes
+* Each .rfc is its own environment! This means that if you have multiple mutators that use this utility, you'll need to include the RFJson prefab in each content mod.
+* The RFJson prefab can be anywhere, so long as it's present within the environment.
